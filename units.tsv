@@ -1,0 +1,17 @@
+sample	unit	fq1	fq2
+RP10	J	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP10_J_R1_.final.fastq.bz2	
+RP11	K	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP11_K_R1_.final.fastq.bz2	
+RP12	L	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP12_L_R1_.final.fastq.bz2	
+RP13	M	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP13_M_R1_.final.fastq.bz2	
+RP14	N	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP14_N_R1_.final.fastq.bz2	
+RP15	O	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP15_O_R1_.final.fastq.bz2	
+RP16	P	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP16_P_R1_.final.fastq.bz2	
+RP1	A	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP1_A_R1_.final.fastq.bz2	
+RP2	B	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP2_B_R1_.final.fastq.bz2	
+RP3	C	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP3_C_R1_.final.fastq.bz2	
+RP4	D	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP4_D_R1_.final.fastq.bz2	
+RP5	E	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP5_E_R1_.final.fastq.bz2	
+RP6	F	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP6_F_R1_.final.fastq.bz2	
+RP7	G	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP7_G_R1_.final.fastq.bz2	
+RP8	H	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP8_H_R1_.final.fastq.bz2	
+RP9	I	/data/gpfs/assoc/inbre/projects/riccardo_panella/RNAseq_cancer_2021-05_PI/raw_seqData/RP9_I_R1_.final.fastq.bz2	

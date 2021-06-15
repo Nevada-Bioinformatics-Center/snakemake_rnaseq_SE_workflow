@@ -1,0 +1,21 @@
+# path or URL to sequencing unit sheet (TSV format, columns: sample, unit, fq1, fq2, 
+# strandedness). Units are technical replicates (e.g. lanes, or resequencing of the 
+# same biological sample).If the column "strandedness" is present (which is optional), 
+# can be empty or has one of these values: none, yes or reverse. none is for unstranded 
+# protocols, yes an reverse follow the nomenclature used in `htseq-count --reverse` 
+# which is referenced in STAR manual section 7, "Counting number of reads per gene".
+
+units: units.tsv
+
+ref:
+  # the star index location or genomefa to index
+  index: "mm39_gencode"
+  genomefa: "/data/gpfs/assoc/inbre/projects/common_references/mm39/GRCm39.primary_assembly.genome.fa"
+  # gtf file with transcripts
+  annotation: "/data/gpfs/assoc/inbre/projects/common_references/mm39/gencode.vM27.primary_assembly.annotation.gtf"
+  adapter: "/data/gpfs/assoc/inbre/projects/common_references/CustomBlacklist.fa"
+
+params:
+  star: ""
+  featurecounts: "-t exon -g gene_id --extraAttributes gene_type,gene_name,mgi_id,havana_gene,transcript_id,transcript_type,transcript_name,havana_transcript"
+  featurecountsmulti: "-p -M -t exon -g gene_id --extraAttributes gene_symbol,transcript_id,transcript_symbol"
