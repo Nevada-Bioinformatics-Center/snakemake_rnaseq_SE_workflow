@@ -7,20 +7,21 @@ def get_fastq1(wildcards):
 def get_fastq2(wildcards):
     return units.loc[(wildcards.sample, wildcards.unit), ["fq2"]].dropna().item()
 
-rule uncompress_bz2:
-    input:
-        get_fastq1,
-    output:
-        temp("uncompressed/{sample}-{unit}.1.fastq")
-    threads: 1
-    resources: time_min=120, mem_mb=2000, cpus=1
-    shell:
-        "bzcat {input} > {output}"
+#rule uncompress_bz2:
+#    input:
+#        get_fastq1,
+#    output:
+#        temp("uncompressed/{sample}-{unit}.1.fastq")
+#    threads: 1
+#    resources: time_min=120, mem_mb=2000, cpus=1
+#    shell:
+#        "bzcat {input} > {output}"
  
 
 rule trimmomatic_se:
     input:
-        temp("uncompressed/{sample}-{unit}.1.fastq"),
+        #temp("uncompressed/{sample}-{unit}.1.fastq"),
+        get_fastq1,
     output:
         "trimmed/{sample}-{unit}.1.fastq.gz",
     log:
