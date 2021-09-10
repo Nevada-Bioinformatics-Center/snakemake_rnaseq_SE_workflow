@@ -181,13 +181,13 @@ rule fastqc_pretrim_r1:
     output:
         html="qc/fastqc_pretrim/{sample}-{unit}_r1.html",
         zip="qc/fastqc_pretrim/{sample}-{unit}_r1_fastqc.zip" # the suffix _fastqc.zip is necessary for multiqc to find the file. If not using multiqc, you are free to choose an arbitrary filename
-    params: "--dir temp/"
+    params: ""
     log:
         "logs/fastqc_pretrim/{sample}-{unit}_r1.log"
     resources: time_min=320, mem_mb=8000, cpus=1
     threads: 1
     wrapper:
-        "v0.75.0/bio/fastqc"
+        "0.78.0/bio/fastqc"
 
 rule fastqc_posttrim_r1:
     input:
@@ -195,13 +195,13 @@ rule fastqc_posttrim_r1:
     output:
         html="qc/fastqc_posttrim/{sample}-{unit}_r1.html",
         zip="qc/fastqc_posttrim/{sample}-{unit}_r1_fastqc.zip" # the suffix _fastqc.zip is necessary for multiqc to find the file. If not using multiqc, you are free to choose an arbitrary filename
-    params: "--dir temp/"
+    params: ""
     log:
         "logs/fastqc_posttrim/{sample}-{unit}_r1.log"
     resources: time_min=320, mem_mb=8000, cpus=1
     threads: 1
     wrapper:
-        "v0.75.0/bio/fastqc"
+        "0.78.0/bio/fastqc"
 
 
 rule multiqc_pre_se:
